@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tailwind-all.css" />
+    <title>Degraphe Video Recorder</title>
+  </head>
+  <body style="background: none">
+    <div class="content">
+      <div style="gap: 20px" class="flex flex-col">
+        <section style="gap: 16px" class="upper flex flex-col">
+          <div class="flex justify-between">
+            <div
+              style="gap: 8px"
+              class="flex flex-row gap-4 items-center justify-center"
+            >
+              <img
+                class="pl-[12px] cursor-pointer"
+                src="/images/icon-32x32.png"
+                alt=""
+              />
+              <p
+                style="color: #120b48"
+                class="font-black text-[16px] text-[#120b48] leading[20.16px]"
+              >
+                HelpMeOut
+              </p>
+            </div>
+
+            <div
+              class="flex gap-2 items-center justify-center"
+              style="gap: 8px"
+            >
+              <img src="/images/setting-2.svg" alt="" class="cursor-pointer" />
+              <img
+                id="closeButton"
+                class="cursor-pointer"
+                src="/images/close-circle.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div>
+            <p class="text-[#413C6D] text-sm leading-[16.42px]">
+              This extension helps you record and share help videos with ease.
+            </p>
+          </div>
+        </section>
+
+        <section style="gap: 24px" class="lower flex flex-col">
+          <div class="flex items-center justify-between relative">
+            <!-- MONITOR -->
+            <!--  Grey-->
+            <div
+              style="gap: 8px; padding-left: 32px; color: #928fab"
+              class="text-sm cursor-pointer font-bold show"
+              id="display1"
+            >
+              <img src="/images/monitorGrey.svg" alt="" />
+
+              <p>Full screen</p>
+            </div>
+            <!-- colored -->
+            <div
+              style="gap: 8px; padding-left: 32px; color: #120b48"
+              class="text-sm cursor-pointer font-bold hide"
+              id="display1a"
+            >
+              <img src="/images/monitor.svg" alt="" />
+
+              <p>Full screen</p>
+            </div>
+
+            <!-- TAB -->
+            <!-- Grey -->
+            <div
+              style="gap: 8px; padding-right: 32px; color: #928fab"
+              class="text-sm cursor-pointer font-bold hide"
+              id="display3"
+            >
+              <img src="/images/tabGrey.svg" alt="" />
+
+              <p class="">Current Tab</p>
+            </div>
+            <!--  Colored -->
+            <div
+              style="gap: 8px; padding-right: 32px; color: #120b48"
+              class="text-sm cursor-pointer font-bold show"
+              id="display4"
+            >
+              <img src="/images/tab.svg" alt="" />
+
+              <p class="">Current Tab</p>
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 12px 12px 12px 16px;
+              color: #100a42;
+              border: 1px solid;
+              border-radius: 12px;
+            "
+            class="flex items-center justify-between"
+          >
+            <div
+              style="gap: 8px"
+              class="flex items-center justify-center font-semibold text-[14px]"
+            >
+              <img src="/images/video-camera.svg" alt="" />
+              <p>Camera</p>
+            </div>
+            <div
+              style="
+                width: 36px;
+                height: 20px;
+                padding: 2px;
+                border-radius: 12px;
+                /* background-color: #120b48; */
+                position: relative;
+                transition: background-color 1s ease;
+              "
+              id="toggleWrapper2"
+              class="flex items-center justify-center cursor-pointer toggle-grey"
+            >
+              <img
+                id="toggleBtn2"
+                class="toggle right"
+                src="images/Button.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 12px 12px 12px 16px;
+              color: #100a42;
+              border: 1px solid;
+              border-radius: 12px;
+            "
+            class="flex items-center justify-between"
+          >
+            <div
+              style="gap: 8px"
+              class="flex items-center justify-center font-semibold text-[14px]"
+            >
+              <img src="/images/microphone.svg" alt="" />
+              <p>Audio</p>
+            </div>
+            <div
+              style="
+                width: 36px;
+                height: 20px;
+                padding: 2px;
+                border-radius: 12px;
+                /* background-color: #a09faa6a; */
+                position: relative;
+                transition: background-color 1s ease;
+              "
+              class="flex items-center justify-center cursor-pointer toggle-grey"
+              id="toggleWrapper"
+            >
+              <img
+                id="toggleBtn"
+                class="toggle right"
+                src="images/Button.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div
+            style="
+              padding: 12px 12px 12px 16px;
+              color: white;
+              border: 1px solid;
+              border-radius: 12px;
+              background-color: #120b48;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 500;
+            "
+            class="flex items-center justify-center cursor-pointer button_cont"
+          >
+            <button id="start_video">Start Recording</button>
+          </div>
+
+          <div
+            class="flex items-center justify-center cursor-pointer button_cont"
+          >
+            <button id="stop_video"></button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- <div id="overlay" class="hiddenn">
+      Add your overlay content here
+      <p>Screen capture in progress...</p>
+    </div> -->
+
+    <script src="./js/popup.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
