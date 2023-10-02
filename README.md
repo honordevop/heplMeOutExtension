@@ -14,7 +14,7 @@ To get started with HelpMeOut Extension, follow these simple steps:
 1. Clone the Project: Open your terminal and run the following command to clone your forked repository to your local machine. Or Download the Zip file of the repository and extract.
 
 ```bash
-    git clone
+    git clone git@github.com:honordevop/heplMeOutExtension.git
 ```
 
 2. Navigate to the Project Folder: Change your current directory to the project folder.
